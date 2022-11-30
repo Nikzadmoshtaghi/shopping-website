@@ -1,0 +1,14 @@
+h2 {
+    font-size: 48px !important;
+    font-weight: 200 !important;
+}
+.bg-success {
+    background-color: #59ab6e !important;
+}
+
+.bg {
+    background-color: #e9eef5 !important;
+}
+.brand-img{
+    filter: grayscale(1);
+}

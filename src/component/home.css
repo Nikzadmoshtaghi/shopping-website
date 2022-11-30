@@ -1,0 +1,11 @@
+.bg-light {
+    background-color: #e9eef5 !important;
+}
+
+svg {
+    background-color: #fff;
+    margin: 10px;
+}
+.hover:hover{
+    color: #59ab6e;
+}

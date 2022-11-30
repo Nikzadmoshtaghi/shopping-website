@@ -1,0 +1,24 @@
+
+td{
+    border-color: inherit !important; 
+    border-width: 1px !important;
+    width: 5em;
+}
+#mt{
+    margin-top: 7em;
+}
+
+#position{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 11em;
+}
+.h-25 {
+    height: 35%!important;
+}
+span.background {
+    background: red;
+    border-radius: 5px;
+    padding: 6px;
+}
