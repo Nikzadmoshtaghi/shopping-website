@@ -9,7 +9,6 @@ import Login from "./component/login";
 import Home from "./component/home";
 import ShowMore from "./component/showMore";
 import About from "./component/about";
-import '../src/app.css'
 import LoadingProducts from "./component/loading/loadingProducts";
 import Information from "./component/information";
 import Dashboard from "./component/dashboard";
