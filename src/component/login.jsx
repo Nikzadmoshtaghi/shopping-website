@@ -18,7 +18,9 @@ class Login extends Component {
       .string()
       .email("email format is incorrect")
       .required("Email field is required"),
-    password: yup.string().min(4, "The password must be at least four characters long"),
+    password: yup
+      .string()
+      .min(4, "The password must be at least four characters long"),
   });
 
   validate = async () => {
@@ -74,8 +76,14 @@ class Login extends Component {
             </p>
           </div>
         </div>
-        
-      <iframe src="https://maps.google.com/maps?q=iran,kermanshah,eslam%20abad&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style={{width: '100%', height: '400px'}}></iframe>
+
+        <iframe
+          src="https://maps.google.com/maps?q=iran,kermanshah,eslam%20abad&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          id="gmap_canvas"
+          frameborder="0"
+          scrolling="no"
+          style={{ width: "100%", height: "400px" }}
+        ></iframe>
         {this.state.errors.length !== 0 && (
           <div className="alert alert-danger">
             <ul>

@@ -18,9 +18,7 @@ const Cart = () => {
       {state.length === 0 ? (
         <div id="position" className="w-50 h bg-color rounded ">
           <h3 className="text-center mt-3">cart is empty !</h3>
-          <p className="text-center">
-          see more products:
-          </p>
+          <p className="text-center">see more products:</p>
           <Link className="text-success text-decoration-none fs-3" to="/shope">
             Shope
           </Link>

@@ -136,7 +136,6 @@ const Home = () => {
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                 
                 >
                   <path d="M11.42 21.815a1.004 1.004 0 0 0 1.16 0C12.884 21.598 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.996c-.029 6.444 7.116 11.602 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.004.021 4.438-4.388 8.423-6 9.731-1.611-1.308-6.021-5.293-6-9.735 0-3.309 2.691-6 6-6z"></path>
                   <path d="M11 14h2v-3h3V9h-3V6h-2v3H8v2h3z"></path>
@@ -149,7 +148,6 @@ const Home = () => {
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                 
                 >
                   <path d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"></path>
                 </svg>
@@ -161,7 +159,6 @@ const Home = () => {
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                 
                 >
                   <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path>
                 </svg>
@@ -240,10 +237,11 @@ const Home = () => {
         </svg>
       </footer>
       <div className="bg-black w-100 py-4">
-          <p className="text-light text-center">
-            Copyright &copy; 2021 Company Name Designed by <span className="text-success">TemplateMo</span>
-          </p>
-        </div>
+        <p className="text-light text-center">
+          Copyright &copy; 2021 Company Name Designed by{" "}
+          <span className="text-success">TemplateMo</span>
+        </p>
+      </div>
     </>
   );
 };

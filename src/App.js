@@ -13,12 +13,10 @@ import LoadingProducts from "./component/loading/loadingProducts";
 import Information from "./component/information";
 import Dashboard from "./component/dashboard";
 
-
 const App = () => {
   const [loading, setLoading] = useState(false);
   const [products, setproducts] = useState([]);
   const [show, setshow] = useState([]);
- 
 
   const fetchData = () => {
     setTimeout(async () => {
@@ -26,7 +24,7 @@ const App = () => {
       const response = await axios.get("https://fakestoreapi.com/products");
       setproducts(response.data);
       setLoading(false);
-    },4000);
+    }, 4000);
   };
   useEffect(() => {
     fetchData();
@@ -61,7 +59,7 @@ const App = () => {
           }
         });
         return Decrase;
-  
+
       case "Remove":
         const Remov = state.filter((p) => p.id !== action.id);
         return Remov;
@@ -73,51 +71,42 @@ const App = () => {
   const [state, dispatch] = useReducer(reducer, []);
 
   return (
-  <div className="container-fluid">
-<div className="row">
-{loading ? (
-        <LoadingProducts />
-      ) : (
-       
-        <productContex.Provider
-          value={{
-            state,
-            dispatch,
-            show: show,
-            products: products,
-            onShow: handleShow,
-          }}
-        >
-          
-          
-          <Routes>
-            <Route path="/" element={<Navbar />}>
-              <Route path="/" element={<Home />} />
-              <Route path="home" element={<Home />} />
-              <Route path="shope" element={<Products />} />
-              <Route path="cart" element={<Cart />} />
-              <Route path="login" element={<Login />} />
-              <Route path="showMore" element={<ShowMore />} />
-              <Route path="about" element={<About />} />
-              <Route path="information" element={<Information />} />
-              <Route path="dashboard" element={<Dashboard />} />
-            </Route>
-          </Routes>
-        </productContex.Provider>
-      )}
-</div>
-  </div>
-   
-   
-   
-   
+    <div className="container-fluid">
+      <div className="row">
+        {loading ? (
+          <LoadingProducts />
+        ) : (
+          <productContex.Provider
+            value={{
+              state,
+              dispatch,
+              show: show,
+              products: products,
+              onShow: handleShow,
+            }}
+          >
+            <Routes>
+              <Route path="/" element={<Navbar />}>
+                <Route path="/" element={<Home />} />
+                <Route path="home" element={<Home />} />
+                <Route path="shope" element={<Products />} />
+                <Route path="cart" element={<Cart />} />
+                <Route path="login" element={<Login />} />
+                <Route path="showMore" element={<ShowMore />} />
+                <Route path="about" element={<About />} />
+                <Route path="information" element={<Information />} />
+                <Route path="dashboard" element={<Dashboard />} />
+              </Route>
+            </Routes>
+          </productContex.Provider>
+        )}
+      </div>
+    </div>
   );
   function handleShow(productId) {
     const newShow = products.filter((p) => p.id === productId);
     setshow(newShow);
   }
-
- 
 };
 
 export default App;

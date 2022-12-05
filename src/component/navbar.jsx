@@ -1,13 +1,16 @@
 import { useContext } from "react";
 import ProductContext from "../context/products";
 import { Outlet, NavLink } from "react-router-dom";
-import './navbar.css'
+import "./navbar.css";
 const Navbar = () => {
   const productContext = useContext(ProductContext);
   const state = productContext.state;
   return (
     <>
-      <nav id="z-index" className="navbar navbar-expand-lg p-2 bg-color bg-gradient position-fixed">
+      <nav
+        id="z-index"
+        className="navbar navbar-expand-lg p-2 bg-color bg-gradient position-fixed"
+      >
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
@@ -34,7 +37,7 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </li>
-             
+
               <li className="nav-item floatR">
                 <NavLink className="nav-link position-relative" to="/cart">
                   <svg
@@ -50,10 +53,7 @@ const Navbar = () => {
                   </span>
                 </NavLink>
               </li>
-
-             
             </ul>
-           
           </div>
         </div>
       </nav>

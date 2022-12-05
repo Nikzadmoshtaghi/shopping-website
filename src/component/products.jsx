@@ -4,16 +4,13 @@ import { Link } from "react-router-dom";
 
 const Products = () => {
   const productContext = useContext(ProductContext);
- 
+
   return (
     <div className=" row mt-5 pt-5 mx-auto">
       {productContext.products.map((p, index) => {
         return (
-          <div className="col-4 mt-3" key={index} >
-            <div
-              className="card ml-2 mr-2 mb-3 h-100"
-              
-            >
+          <div className="col-4 mt-3" key={index}>
+            <div className="card ml-2 mr-2 mb-3 h-100">
               <div className="card-body">
                 <Link
                   onClick={() => {
@@ -28,7 +25,7 @@ const Products = () => {
                 <div className="d-flex justify-content-between mt-3">
                   <h2>{p.price}$</h2>
                 </div>
-              
+
                 <img
                   src={p.image}
                   className="card-img-top img-height w-50"
