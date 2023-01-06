@@ -42,7 +42,7 @@ const Cart = () => {
                 return (
                   <tr key={index}>
                     <td className="text-center">
-                      <img className="w-25" src={p.image} alt="" />
+                      <img className="w-50" src={p.image} alt="" />
                     </td>
                     <td className="w-25">{p.title}</td>
                     <td className="text-center">{p.price}</td>
@@ -119,7 +119,7 @@ const Cart = () => {
         className="text-light fs-3  text-center text-decoration-none"
         to="/information"
       >
-        <span className="background">Buy</span>
+        <span className="background mt-5">Buy</span>
       </Link>
     </>
   );

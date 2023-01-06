@@ -7,7 +7,7 @@ import img4 from "../img/brand_04.png";
 const About = () => {
   return (
     <>
-      <section className="bg-success p-5 mt-2">
+      <section className="bg-success p-5 mt-5 pt-5">
         <div className="container">
           <div className="row py-5 align-items-center">
             <div className="col-md-7 text-white">

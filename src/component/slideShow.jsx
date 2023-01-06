@@ -10,7 +10,7 @@ const SlideShow = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 2,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -30,7 +30,7 @@ const SlideShow = () => {
             alt=""
           />
           <h2 className="text-success">
-            <b>Zay</b> eCommerce
+            <b>Zay</b>
           </h2>
           <h3>Tiny and Perfect eCommerce Template</h3>
           <p>
@@ -49,7 +49,7 @@ const SlideShow = () => {
             >
               Freepik Stories
             </a>
-            ,
+            
             <a
               className="text-success text-decoration-none"
               href="https://unsplash.com/"
@@ -112,7 +112,7 @@ const SlideShow = () => {
           </p>
         </div>
       </Carousel>
-      ;
+      
     </>
   );
 };

@@ -9,7 +9,7 @@ const Home = () => {
         <SlideShow />
         <div className="row">
           <div className="col-6 m-auto">
-            <h2>Categories of The Month</h2>
+            <h2 className="font-size">Categories of The Month</h2>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
@@ -18,7 +18,7 @@ const Home = () => {
         </div>
 
         <div className="row">
-          <div className="col-12 col-md-4 p-5 mt-3 text-center">
+          <div className="col-12 col-md-4 p-5 mt-2 text-center">
             <img
               className="w-75 border img-fluid rounded-circle"
               src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"

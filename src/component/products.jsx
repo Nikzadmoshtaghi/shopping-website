@@ -6,10 +6,10 @@ const Products = () => {
   const productContext = useContext(ProductContext);
 
   return (
-    <div className=" row mt-5 pt-5 mx-auto">
+    <div className=" row mx-auto">
       {productContext.products.map((p, index) => {
         return (
-          <div className="col-4 mt-3" key={index}>
+          <div className="col-md-4 col-sm-6 mt-5 pt-5" key={index}>
             <div className="card ml-2 mr-2 mb-3 h-100">
               <div className="card-body">
                 <Link
@@ -23,7 +23,7 @@ const Products = () => {
                 </Link>
                 <br />
                 <div className="d-flex justify-content-between mt-3">
-                  <h2>{p.price}$</h2>
+                  <h2 className="price">{p.price}$</h2>
                 </div>
 
                 <img
